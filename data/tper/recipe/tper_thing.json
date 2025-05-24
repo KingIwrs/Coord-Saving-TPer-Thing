@@ -1,0 +1,42 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "equipment",
+    "pattern": [
+        " E ",
+        "ERE",
+        " E "
+    ],
+    "key": {
+        "E": [
+            "minecraft:ender_pearl"
+        ],
+        "R": [
+            "minecraft:recovery_compass"
+        ]
+    },
+    "result": {
+        "id": "minecraft:recovery_compass",
+        "components": {
+            "minecraft:custom_data": {
+                "tper_thing": true,
+                "unset": true
+            },
+            "minecraft:item_name": {"fallback": "TP'er Thing", "translate": "item.tper.tper_thing"},
+            "minecraft:rarity": "epic",
+            "minecraft:consumable": {
+                "consume_seconds": 1000000
+            },
+            "minecraft:lore": [
+                {"translate": "item.tper.default_lore1", "fallback": "Coordinates:", "color": "yellow", "italic": false},
+                {"translate": "item.tper.default_lore2", "fallback": " -unset-", "color": "dark_red", "italic":false},
+                {"translate": "item.tper.default_lore3", "fallback": "Dimension:", "color": "yellow", "italic": false},
+                {"translate": "item.tper.default_lore2", "fallback": " -unset-", "color": "dark_red", "italic":false},
+                {"text": " "},
+                {"translate": "item.tper.default_lore3", "fallback": "Save coordinates with:", "color": "green", "italic": false},
+                {"keybind": "key.sneak", "extra": [{"text": " + ", "extra": [{"keybind": "key.use", "color": "red", "italic": false}], "color": "red", "italic": false}], "color": "red", "italic": false}
+            ],
+            "minecraft:max_stack_size": 1
+        },
+        "count": 1
+    }
+}

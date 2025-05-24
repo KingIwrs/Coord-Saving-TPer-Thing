@@ -1,0 +1,26 @@
+{
+	"criteria": {
+		"use_item": {
+			"trigger": "minecraft:using_item",
+			"conditions": {
+				"player": {
+					"flags": {
+						"is_sneaking": true
+					}
+				},
+				"item": {
+					"items": "minecraft:recovery_compass",
+					"predicates": {
+						"minecraft:custom_data": {
+							"tper_thing": true,
+                            "unset": true
+						}
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "tper:save_coord/start"
+	}
+}

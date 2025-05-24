@@ -1,0 +1,21 @@
+{
+	"criteria": {
+		"use_item": {
+			"trigger": "minecraft:using_item",
+			"conditions": {
+				"item": {
+					"items": "minecraft:recovery_compass",
+					"predicates": {
+						"minecraft:custom_data": {
+							"tper_thing": true,
+							"unset": false
+						}
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "tper:tp_to_coord/start"
+	}
+}
