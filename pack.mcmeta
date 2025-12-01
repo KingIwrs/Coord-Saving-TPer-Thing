@@ -1,7 +1,9 @@
 {
     "pack": {
         "description": "Coord Saving TP'er Thing",
+        "pack_format": 999,
+        "supported_formats": [71, 999],
         "min_format": 71,
-        "max_format": 999
+        "max_format": [999,99]
     }
 }
